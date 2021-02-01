@@ -223,6 +223,11 @@ body {
   color: $white;
 }
 
+.btn-secondary--active2 {
+  background: $dark-slate-blue;
+  color: $white;
+}
+
 .width--full {
   width: 100%;
 }
@@ -390,6 +395,7 @@ section {
 .testimoni-section {
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   text-align: left;
   align-items: flex-start;
@@ -511,6 +517,25 @@ section {
       line-height: 1.36;
       font-weight: 500;
       padding: 0 17px 10px 17px;
+    }
+  }
+}
+
+.section-container {
+  background-color: $white-two;
+  padding: 1em 0;
+
+  .home-portfolio {
+    // margin-top: 3em;
+
+    img {
+      width: 100%;
+    }
+
+    .MuiTypography-root.MuiLink-root {
+      color: $dark-slate-blue;
+      font-size: 1rem;
+      margin-top: 3em;
     }
   }
 }

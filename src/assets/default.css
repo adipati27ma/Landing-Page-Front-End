@@ -199,6 +199,11 @@ body {
   color: #ffffff;
 }
 
+.btn-secondary--active2 {
+  background: #3e61dc;
+  color: #ffffff;
+}
+
 .width--full {
   width: 100%;
 }
@@ -362,6 +367,7 @@ section .section-title::after {
 .testimoni-section {
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   text-align: left;
   -webkit-box-align: start;
@@ -498,6 +504,21 @@ section .section-title::after {
   line-height: 1.36;
   font-weight: 500;
   padding: 0 17px 10px 17px;
+}
+
+.section-container {
+  background-color: #efefef;
+  padding: 1em 0;
+}
+
+.section-container .home-portfolio img {
+  width: 100%;
+}
+
+.section-container .home-portfolio .MuiTypography-root.MuiLink-root {
+  color: #3e61dc;
+  font-size: 1rem;
+  margin-top: 3em;
 }
 
 .home-carousel-container {
@@ -681,21 +702,34 @@ section .section-title::after {
   max-width: 100vw;
 }
 
+.detail-grid-container button.btn {
+  margin: .8em 0;
+  font-weight: bold;
+}
+
 .image-heading {
   width: 100%;
   background: #ffffff;
   height: 250px;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .image-heading .image-heading-title {
   text-align: center;
   color: #ffffff;
-  padding-top: 2rem;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 6rem;
 }
 
 .compro-section {
@@ -1306,6 +1340,15 @@ header ul li a:hover, header ul li a:active {
   text-decoration: underline;
 }
 
+header ul li a .MuiButtonBase-root {
+  margin-left: 40px;
+}
+
+header ul li a .MuiButtonBase-root img.search-icon {
+  width: 19px;
+  height: 16px;
+}
+
 .mobile-menu {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -1447,7 +1490,7 @@ input[type=text]:focus, input[type=password]:focus {
   background: #ffffff;
   padding: 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #292929;
 }
 
@@ -1457,7 +1500,28 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 .detail-content p + p {
+  font-size: .8rem;
   margin: .5em 0;
+}
+
+.detail-content .social-media-wrapper {
+  margin-top: 2.4em;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.detail-content .social-media-wrapper .social-media-item {
+  margin: 0 .3rem;
+}
+
+.detail-content .social-media-wrapper .social-media-item:hover {
+  cursor: pointer;
 }
 
 .accordion {
@@ -1750,10 +1814,16 @@ input[type=text]:focus, input[type=password]:focus {
   opacity: 1;
 }
 
-@media all and (min-width: 300px) and (max-width: 768px) {
+@media all and (min-width: 300px) and (max-width: 960px) {
   .web-menu {
     display: none;
   }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 768px) {
   #content.services-content .services-section .left-text-wrapper .MuiTypography-root.services-section-subtitle {
     text-align: center;
   }
@@ -1847,9 +1917,6 @@ input[type=text]:focus, input[type=password]:focus {
   }
   .width--large {
     width: 90%;
-  }
-  .hamburger {
-    display: block;
   }
   .page-header-container {
     padding: 1em .5em;

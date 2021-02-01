@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 //import React, { Component, Fragment } from 'react';
 // import './Header.css';
 
+import { IconButton } from '@material-ui/core';
+
 function Header(props) {
   //const [setCookie, removeCookie] = useCookies(['token']);
   //let buttons;
@@ -71,6 +73,17 @@ function Header(props) {
             <li>
               <Link to="/contact">Hubungi Kami</Link>
             </li>
+            {/* <li>
+              <Link to="#">
+                <IconButton>
+                  <img
+                    src="../../image/ic-search.svg"
+                    className="search-icon"
+                    alt="Search Icon"
+                  />
+                </IconButton>
+              </Link>
+            </li> */}
           </ul>
         </div>
 
@@ -96,6 +109,17 @@ function Header(props) {
             <li>
               <Link to="/contact">Hubungi Kami</Link>
             </li>
+            {/* <li>
+              <Link to="#">
+                <IconButton>
+                  <img
+                    src="../../image/ic-search.svg"
+                    className="search-icon"
+                    alt="Search Icon"
+                  />
+                </IconButton>
+              </Link>
+            </li> */}
           </ul>
         </div>
         <div className="hamburger" onClick={() => openHamburger()}>
